@@ -1,0 +1,18 @@
+/* Base */
+@import "base/preset.css";
+@import "base/variables.css";
+@import "base/utils.css";
+@import "base/animations.css";
+
+/* Layout */
+@import "layout/layout.css";
+
+/* Components */
+@import "components/navbar.css";
+@import "components/slider.css";
+@import "components/cover.css";
+@import "components/showcase.css";
+@import "components/product.css";
+@import "components/arrival.css";
+@import "components/footer.css";
+

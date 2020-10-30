@@ -1,0 +1,115 @@
+.product {
+  max-width: 18rem;
+  position: relative;
+}
+
+@media (max-width: 27em) {
+  .product {
+    max-width: 100%;
+  }
+  .product__desc {
+    padding: 0 4rem;
+  }
+}
+@media (max-width: 23em) {
+ 
+  .product__desc {
+    padding: 0 1rem;
+  }
+}
+
+.product__img {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 2rem;
+}
+.product__img img {
+  width: 100%;
+  height: 100%;
+}
+.product__cat {
+  font-size: 1.6rem;
+  color: var(--gray-dark);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.product__name {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.product__pricing {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.product__price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--blue);
+}
+.product__icon-rate {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.product__icon-rate path {
+  fill: var(--orange);
+}
+
+.product__icons {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  /*display: flex;
+  */
+  flex-direction: column;
+  align-content: space-between;
+  height: 10rem;
+  padding: 1rem;
+  display: none;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+@media (max-width: 47em) {
+  .product__icons {
+    display: flex;
+  }
+}
+
+.product__icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  background-color: #eee;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  animation: moveright-icon 0.3s 0.2s ease-in-out backwards;
+  -webkit-animation: moveright-icon 0.3s 0.2s ease-in-out backwards;
+}
+
+.product__icon:not(:first-child) {
+  margin-top: 1.5rem;
+  animation: moveright-icon 0.3s 0.3s ease-in-out backwards;
+  -webkit-animation: moveright-icon 0.3s 0.3s ease-in-out backwards;
+}
+
+.icon-product path {
+  fill: var(--blue);
+}
+
+.product:hover .product__icons {
+  display: flex;
+}

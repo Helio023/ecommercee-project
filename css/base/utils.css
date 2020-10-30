@@ -1,0 +1,30 @@
+.icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.icon path {
+  fill: var(--gray);
+}
+.f-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.f-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.f-bet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

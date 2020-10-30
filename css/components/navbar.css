@@ -1,0 +1,108 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 128rem;
+  margin: 0 auto;
+}
+.navbar__logo {
+  flex: 1;
+  /* background: gray; */
+}
+
+.navbar__brand a:link,
+.navbar__brand a:visited {
+  font-size: 2.6rem;
+  font-weight: 200;
+  color: var(--blue);
+  font-family: "Grandstander", cursive;
+}
+@media (max-width: 45em) {
+  .navbar__brand a:link,
+  .navbar__brand a:visited {
+    font-size: 2.3rem;
+  }
+}
+
+.navbar__search {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* background-color: brown; */
+}
+@media (max-width: 39em) {
+  .navbar__search {
+    display: none;
+  }
+}
+
+.navbar__search-icon {
+  position: absolute;
+  left: 1rem;
+}
+
+.navbar__input {
+  width: 100%;
+  padding: 1rem 3.5rem;
+  outline: none;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 200;
+}
+.navbar__input::-webkit-input-placeholder {
+  color: var(--gray);
+}
+.navbar__input::-moz-placeholder {
+  color: var(--gray);
+}
+
+.navbar__input:focus {
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+.navbar__user {
+  flex: 1;
+  /* background-color: gray; */
+}
+.navbar__icon-basket {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  background-color: var(--gray-light);
+  margin-left: 2rem;
+  padding: 0.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.navbar__icon-user {
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.navbar__counter {
+  font-size: 1.3rem;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: -0.5rem;
+  right: -1rem;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
